@@ -1,5 +1,7 @@
 package com.example.bricola.app_test;
 
+//test
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
