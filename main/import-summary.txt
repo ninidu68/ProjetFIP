@@ -1,0 +1,140 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* app\
+* app\build.gradle
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\java\
+* app\src\main\java\com\
+* app\src\main\java\com\example\
+* app\src\main\java\com\example\bricola\
+* app\src\main\java\com\example\bricola\app_test\
+* app\src\main\java\com\example\bricola\app_test\AddGroupActivity.java
+* app\src\main\java\com\example\bricola\app_test\AddNewMemberInGroupActivity.java
+* app\src\main\java\com\example\bricola\app_test\AddNewTransactionActivity.java
+* app\src\main\java\com\example\bricola\app_test\BalanceAccountActivity.java
+* app\src\main\java\com\example\bricola\app_test\Calculator.java
+* app\src\main\java\com\example\bricola\app_test\DeleteMemberInGroupActivity.java
+* app\src\main\java\com\example\bricola\app_test\DeleteTransactionActivity.java
+* app\src\main\java\com\example\bricola\app_test\GroupActivity.java
+* app\src\main\java\com\example\bricola\app_test\MainActivity.java
+* app\src\main\java\com\example\bricola\app_test\Member.java
+* app\src\main\java\com\example\bricola\app_test\RefundTransaction.java
+* app\src\main\java\com\example\bricola\app_test\SettingsActivity.java
+* app\src\main\java\com\example\bricola\app_test\Transaction.java
+* app\src\main\java\com\example\bricola\app_test\XMLManipulator.java
+* app\src\main\res\
+* app\src\main\res\layout\
+* app\src\main\res\layout\activity_add_group.xml
+* app\src\main\res\layout\activity_add_new_member_in_group.xml
+* app\src\main\res\layout\activity_add_new_transaction.xml
+* app\src\main\res\layout\activity_balance_account.xml
+* app\src\main\res\layout\activity_delete_member_in_group.xml
+* app\src\main\res\layout\activity_delete_transaction.xml
+* app\src\main\res\layout\activity_group.xml
+* app\src\main\res\layout\activity_main.xml
+* app\src\main\res\layout\activity_settings.xml
+* app\src\main\res\layout\content_add_group.xml
+* app\src\main\res\layout\content_add_new_member_in_group.xml
+* app\src\main\res\layout\content_add_new_transaction.xml
+* app\src\main\res\layout\content_balance_account.xml
+* app\src\main\res\layout\content_delete_member_in_group.xml
+* app\src\main\res\layout\content_delete_transaction.xml
+* app\src\main\res\layout\content_group.xml
+* app\src\main\res\layout\content_main.xml
+* app\src\main\res\layout\content_settings.xml
+* app\src\main\res\menu\
+* app\src\main\res\menu\menu_group.xml
+* app\src\main\res\menu\menu_main.xml
+* app\src\main\res\mipmap-hdpi\
+* app\src\main\res\mipmap-hdpi\ic_add_group.png
+* app\src\main\res\mipmap-hdpi\ic_add_member.png
+* app\src\main\res\mipmap-hdpi\ic_add_transaction.png
+* app\src\main\res\mipmap-hdpi\ic_balance_account.png
+* app\src\main\res\mipmap-hdpi\ic_delete_group.png
+* app\src\main\res\mipmap-hdpi\ic_delete_member.png
+* app\src\main\res\mipmap-hdpi\ic_delete_transaction.png
+* app\src\main\res\mipmap-hdpi\ic_launcher.png
+* app\src\main\res\mipmap-hdpi\ic_settings.png
+* app\src\main\res\mipmap-mdpi\
+* app\src\main\res\mipmap-mdpi\ic_add_group.png
+* app\src\main\res\mipmap-mdpi\ic_add_member.png
+* app\src\main\res\mipmap-mdpi\ic_add_transaction.png
+* app\src\main\res\mipmap-mdpi\ic_balance_account.png
+* app\src\main\res\mipmap-mdpi\ic_delete_group.png
+* app\src\main\res\mipmap-mdpi\ic_delete_member.png
+* app\src\main\res\mipmap-mdpi\ic_delete_transaction.png
+* app\src\main\res\mipmap-mdpi\ic_launcher.png
+* app\src\main\res\mipmap-mdpi\ic_settings.png
+* app\src\main\res\mipmap-xhdpi\
+* app\src\main\res\mipmap-xhdpi\ic_add_group.png
+* app\src\main\res\mipmap-xhdpi\ic_add_member.png
+* app\src\main\res\mipmap-xhdpi\ic_add_transaction.png
+* app\src\main\res\mipmap-xhdpi\ic_balance_account.png
+* app\src\main\res\mipmap-xhdpi\ic_delete_dember.png
+* app\src\main\res\mipmap-xhdpi\ic_delete_group.png
+* app\src\main\res\mipmap-xhdpi\ic_delete_transaction.png
+* app\src\main\res\mipmap-xhdpi\ic_launcher.png
+* app\src\main\res\mipmap-xhdpi\ic_settings.png
+* app\src\main\res\mipmap-xxhdpi\
+* app\src\main\res\mipmap-xxhdpi\ic_launcher.png
+* app\src\main\res\mipmap-xxxhdpi\
+* app\src\main\res\mipmap-xxxhdpi\ic_launcher.png
+* app\src\main\res\values-v21\
+* app\src\main\res\values-v21\styles.xml
+* app\src\main\res\values-w820dp\
+* app\src\main\res\values-w820dp\dimens.xml
+* app\src\main\res\values\
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* settings.gradle
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
