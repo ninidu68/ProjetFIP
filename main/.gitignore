@@ -1,0 +1,14 @@
+/app/build
+/app/app.iml
+/app/build.gradle
+/gradle
+/build
+/.idea
+/.gradle
+/settings.gradle
+/main.iml
+/local.properties
+/import-summary.txt
+/gradlew.bat
+/gradlew
+/build.gradle
