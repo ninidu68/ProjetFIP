@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD:main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-pt/values-pt.xml
     <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-sdk-release/frameworks/support/v7/appcompat/res/values-pt/strings.xml -->
+=======
+    <!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-pt-rBR/values-pt-rBR.xml -->
+>>>>>>> origin/master:main/app/build/intermediates/res/merged/debug/values-pt-rBR/values-pt-rBR.xml
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>

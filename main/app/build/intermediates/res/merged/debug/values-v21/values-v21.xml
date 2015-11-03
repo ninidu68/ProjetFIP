@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <dimen name="design_navigation_padding_top_default">24dp</dimen>
     <!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/src/main/res/values-v21/styles.xml -->
+=======
+    <!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <dimen name="design_navigation_padding_top_default">24dp</dimen>
+    <!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/src/main/res/values-v21/styles.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -11,7 +18,11 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+<<<<<<< HEAD
     <!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v21/values-v21.xml -->
+=======
+    <!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

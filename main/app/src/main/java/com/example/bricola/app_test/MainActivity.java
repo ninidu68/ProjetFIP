@@ -4,6 +4,8 @@ package com.example.bricola.app_test;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,10 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import org.xml.sax.SAXException;
 import org.xmlpull.v1.XmlPullParserException;
-
+import android.app.Activity;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -46,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
     private String groupXMLFile = "group.xml";
     private ListView groupNameListView = null;
     private XMLManipulator groupXMLManipulator;
+    // The following are used for the shake detection
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +63,24 @@ public class MainActivity extends AppCompatActivity {
 
         this.setTitle("Partage de frais");
 
-       //Création du fichier group.xml si le fichier n'existe pas
-        File groupXMLFilePath = new File (this.getFilesDir().toString() + "/" + groupXMLFile);
-        if (!groupXMLFilePath.exists())
-        {
+        // ShakeDetector initialization
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector();
+        mShakeDetector.setOnShakeListener(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake(int count) {
+				/*
+				 * The following method, "handleShakeEvent(count):" is a stub //
+				 * method you would use to setup whatever you want done once the
+				 * device has been shook.
+				 */
+                handleShakeEvent(count);
+            }
+        });
+        //Création du fichier group.xml si le fichier n'existe pas
+        File groupXMLFilePath = new File(this.getFilesDir().toString() + "/" + groupXMLFile);
+        if (!groupXMLFilePath.exists()) {
             try {
                 groupXMLManipulator = new XMLManipulator(this.getApplicationContext());
                 groupXMLManipulator.createEmptyGroupXMLFile();
@@ -68,10 +89,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if (savedInstanceState == null)
-        {
+        if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
-            if(extras != null) {
+            if (extras != null) {
                 if (getIntent().hasExtra("groupName"))
                     try {
                         ArrayList<String> NewGroupMemberNameList = new ArrayList<String>();
@@ -98,40 +118,61 @@ public class MainActivity extends AppCompatActivity {
         //Affichage du contenu d'un groupe après sélection par clic
         groupNameListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position,
-                                    long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, GroupActivity.class);
                 String groupName = (String) parent.getItemAtPosition(position);
-                intent.putExtra("groupName" , groupName);
+                intent.putExtra("groupName", groupName);
                 startActivity(intent);
             }
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+                // Inflate the menu; this adds items to the action bar if it is present.
+                getMenuInflater().inflate(R.menu.menu_main, menu);
+                return true;
+            }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+                // Handle action bar item clicks here. The action bar will
+                // automatically handle clicks on the Home/Up button, so long
+                // as you specify a parent activity in AndroidManifest.xml.
+                int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_addGroup) {
-            Intent intent = new Intent(MainActivity.this, AddGroupActivity.class);
-            startActivity(intent);
+                //noinspection SimplifiableIfStatement
+                if (id == R.id.action_addGroup) {
+                    Intent intent = new Intent(MainActivity.this, AddGroupActivity.class);
+                    startActivity(intent);
+                } else if (id == R.id.action_settings) {
+                    Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                    startActivity(intent);
+                }
+
+                return super.onOptionsItemSelected(item);
+            }
+            //called method for shake event
+            private void handleShakeEvent(int count) {
+                Intent intent = new Intent(MainActivity.this, AddGroupActivity.class);
+                startActivity(intent);
+            }
+            @Override
+
+            public void onResume() {
+                super.onResume();
+                // Add the following line to register the Session Manager Listener onResume
+                mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+            }
+
+            @Override
+            public void onPause() {
+                // Add the following line to unregister the Sensor Manager onPause
+                mSensorManager.unregisterListener(mShakeDetector);
+                super.onPause();
+            }
         }
-        else if (id == R.id.action_settings) {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(intent);
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
-}
+
+
+

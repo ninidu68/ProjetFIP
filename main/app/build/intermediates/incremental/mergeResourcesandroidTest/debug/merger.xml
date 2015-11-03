@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\Fischer\Documents\GitHub\ProjetFIP\main\app\src\androidTest\res"/><source path="C:\Users\Fischer\Documents\GitHub\ProjetFIP\main\app\build\generated\res\rs\androidTest\debug"/><source path="C:\Users\Fischer\Documents\GitHub\ProjetFIP\main\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\Erwan\Documents\GitHub\ProjetFip\main\app\src\androidTest\res"/><source path="C:\Users\Erwan\Documents\GitHub\ProjetFip\main\app\build\generated\res\rs\androidTest\debug"/><source path="C:\Users\Erwan\Documents\GitHub\ProjetFip\main\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
+>>>>>>> origin/master

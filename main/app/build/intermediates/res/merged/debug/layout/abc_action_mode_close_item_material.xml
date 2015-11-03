@@ -14,6 +14,7 @@
      limitations under the License.
 -->
 
+<<<<<<< HEAD
 <android.support.v7.internal.widget.TintImageView
              xmlns:android="http://schemas.android.com/apk/res/android"
              android:id="@+id/action_mode_close_button"
@@ -24,3 +25,15 @@
              style="?attr/actionModeCloseButtonStyle"
              android:layout_width="wrap_content"
              android:layout_height="match_parent" /><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-sdk-release/frameworks/support/v7/appcompat/res/layout/abc_action_mode_close_item_material.xml --><!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_mode_close_item_material.xml -->
+=======
+<ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_mode_close_button"
+        android:contentDescription="@string/abc_action_mode_done"
+        android:focusable="true"
+        android:clickable="true"
+        android:src="?attr/actionModeCloseDrawable"
+        style="?attr/actionModeCloseButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/><!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/appcompat/res/layout/abc_action_mode_close_item_material.xml --><!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/layout/abc_action_mode_close_item_material.xml -->
+>>>>>>> origin/master
