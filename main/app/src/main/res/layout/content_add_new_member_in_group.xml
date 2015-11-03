@@ -43,4 +43,14 @@
         android:layout_below="@+id/memberName_editText"
         android:layout_alignParentLeft="true"
         android:layout_alignEnd="@+id/memberName_editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chercher dans Repertoire"
+        android:id="@+id/Btn_cherche_repertoire"
+        android:layout_below="@+id/addNewMemberInGroup_button"
+        android:layout_marginTop="186dp"
+        android:layout_alignRight="@+id/addNewMemberInGroup_button"
+        android:layout_alignParentLeft="true" />
 </RelativeLayout>

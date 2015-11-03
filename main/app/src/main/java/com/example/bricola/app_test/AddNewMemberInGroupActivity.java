@@ -21,6 +21,7 @@ public class AddNewMemberInGroupActivity extends AppCompatActivity {
     private String groupName = null;
     private static XMLManipulator groupXMLManipulator;
 
+private Button Find_Repertory = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +56,15 @@ public class AddNewMemberInGroupActivity extends AppCompatActivity {
                 //Retour a la fenetre du group en envoyant le nom du nouveau membrer en extra
                 Intent intent = new Intent(AddNewMemberInGroupActivity.this, GroupActivity.class);
                 intent.putExtra("groupName", groupName);
+                startActivity(intent);
+            }
+        });
+
+        Find_Repertory = (Button) findViewById(R.id.Btn_cherche_repertoire);
+        Find_Repertory.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = Intent.makeMainSelectorActivity(Intent.ACTION_MAIN,"android.intent.category.APP_CONTACTS");
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
