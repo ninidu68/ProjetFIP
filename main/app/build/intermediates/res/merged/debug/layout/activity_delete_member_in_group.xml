@@ -18,8 +18,4 @@
     <include layout="@layout/content_delete_member_in_group" />
 
 </android.support.design.widget.CoordinatorLayout>
-<<<<<<< HEAD
 <!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/src/main/res/layout/activity_delete_member_in_group.xml -->
-=======
-<!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/src/main/res/layout/activity_delete_member_in_group.xml -->
->>>>>>> origin/master

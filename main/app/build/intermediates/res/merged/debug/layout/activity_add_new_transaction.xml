@@ -18,8 +18,4 @@
     <include layout="@layout/content_add_new_transaction" />
 
 </android.support.design.widget.CoordinatorLayout>
-<<<<<<< HEAD
 <!-- From: file:/C:/Users/Fischer/Documents/GitHub/ProjetFIP/main/app/src/main/res/layout/activity_add_new_transaction.xml -->
-=======
-<!-- From: file:/C:/Users/Erwan/Documents/GitHub/ProjetFip/main/app/src/main/res/layout/activity_add_new_transaction.xml -->
->>>>>>> origin/master
